@@ -6,3 +6,15 @@ function logFirstTwoBoxes(boxes) {
 }
 
 logFirstTwoBoxes(boxes);
+
+
+function compressBoxesTwice(boxes, boxes2){
+  boxes.forEach(function(boxes){
+    console.log(boxes);
+  });
+
+  boxes.forEach(function(boxes){
+    console.log(boxes);
+  })
+}
+// O(a   + b)
