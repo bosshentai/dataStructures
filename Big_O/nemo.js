@@ -18,8 +18,13 @@ const large = new Array(100000).fill("nemo");
 
 function findNemo(array) {
   // let t0 = performance.now();
+
   for (let i = 0; i < array.length; i++) {
-    if (array[i] === "nemo") console.log("Found Nemo!");
+    console.log("running");
+    if (array[i] === "nemo") {
+      console.log("Found Nemo!");
+      break;
+    }
   }
   // let t1 = performance.now()
 
@@ -28,11 +33,6 @@ function findNemo(array) {
 
 //findNemo(nemo);
 
-//findNemo(everyone);
+findNemo(everyone);
 
-findNemo(large); // O(n) --> Linear Time
-
-function logFirstTwoBoxes(boxes) {
-  console.log(boxes[0]);
-  console.log(boxes[1]);
-}
+//findNemo(large); // O(n) --> Linear Time
