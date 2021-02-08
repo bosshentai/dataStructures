@@ -13,7 +13,7 @@ function compressBoxesTwice(boxes, boxes2){
     console.log(boxes);
   });
 
-  boxes.forEach(function(boxes){
+  boxes2.forEach(function(boxes){
     console.log(boxes);
   })
 }
