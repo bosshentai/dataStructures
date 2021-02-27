@@ -20,7 +20,7 @@ function findNemo(array) {
   // let t0 = performance.now();
 
   for (let i = 0; i < array.length; i++) {
-    console.log("running");
+   // console.log("running");
     if (array[i] === "nemo") {
       console.log("Found Nemo!");
       break;
@@ -36,3 +36,23 @@ function findNemo(array) {
 findNemo(everyone);
 
 //findNemo(large); // O(n) --> Linear Time
+
+const findNemo2 = array => {
+  array.forEach(fish => {
+    if(fish === 'nemo' ){
+      console.log('Found Nemo!');
+    }
+  })
+}
+
+
+const findNemo3 = array => {
+  for(let fish of array) {
+    if(fish === 'nemo' ){
+      console.log('Found Nemo!');
+    }
+  }
+}
+
+findNemo2(everyone)
+findNemo3(everyone)
