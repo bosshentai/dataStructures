@@ -72,3 +72,10 @@ function containsCommonItem2(arr1, arr2) {
 }
 
 console.log(containsCommonItem2(array1, array2));
+
+
+function containsCommonItem3(arr1,arr2){
+    return arr1.some(item => arr2.includes(item))
+}
+
+console.log(containsCommonItem3(array1,array2))
