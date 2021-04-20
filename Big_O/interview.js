@@ -40,6 +40,9 @@ console.log(common(array1, array2));
 //     return false
 // }
 
+// O(a*b)
+// O(1) - Space Complexity
+
 //  arra1 ==> obj {
 //     a : true,
 //     b : true,
@@ -70,6 +73,8 @@ function containsCommonItem2(arr1, arr2) {
 
   return false;
 }
+//O(a + b) Time Complexity
+//O(a) Space Complexity
 
 console.log(containsCommonItem2(array1, array2));
 
